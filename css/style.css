@@ -8,4 +8,42 @@ Reset
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    color: white;
+}
+
+/*
+--------
+Common
+--------
+*/
+
+header, .header-content {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header {
+    height: 50px;
+    align-items: center;
+}
+
+body {
+    background-color: black;
+}
+
+/*
+--------
+Header
+--------
+*/
+
+.header-content {
+    margin-right: 10px;
+    gap: 10px;
+}
+
+.header-content > div {
+    background-color: rgba(211, 211, 211, 0.5);
+    padding: 5px;
+    border-radius: 10px;
 }
