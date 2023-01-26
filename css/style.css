@@ -36,6 +36,13 @@ footer {
     height: 70px;
 }
 
+main {
+    height: calc(100vh - 70px - 50px);
+    width: 95%;
+    margin: 0 auto;
+    overflow: auto;
+}
+
 /*
 --------
 Header
@@ -51,6 +58,38 @@ Header
     background-color: rgba(211, 211, 211, 0.5);
     padding: 5px;
     border-radius: 10px;
+}
+
+/*
+--------
+Main
+--------
+*/
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px;
+    
+}
+
+.box {
+    width: 250px;
+    height: 150px;
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.box > * {
+    position: absolute;
+}
+
+.box .username {
+    background-color: rgb(211, 211, 211, 0.5);
+    bottom: 0;
+    left: 0;
+    padding: 3px 5px;
 }
 
 /*
@@ -71,13 +110,12 @@ Footer
     height: 70px;
     position: relative;
 }
-
 .footer-element.big {
-    width: 90px;
+    width: 80px;
 }
 
 .footer-element.small {
-    width: 70px;
+    width: 60px;
 }
 
 .footer-element > * {
