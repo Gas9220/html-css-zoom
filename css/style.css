@@ -31,6 +31,11 @@ body {
     background-color: black;
 }
 
+footer {
+    background-color: rgb(34, 34, 34);
+    height: 70px;
+}
+
 /*
 --------
 Header
@@ -46,4 +51,68 @@ Header
     background-color: rgba(211, 211, 211, 0.5);
     padding: 5px;
     border-radius: 10px;
+}
+
+/*
+--------
+Footer
+--------
+*/
+
+.footer-elements, .left-elements, .middle-elements, .right-elements {
+    display: flex;
+}
+
+.footer-elements {
+    justify-content: space-between;
+}
+
+.footer-element {
+    height: 70px;
+    position: relative;
+}
+
+.footer-element.big {
+    width: 90px;
+}
+
+.footer-element.small {
+    width: 70px;
+}
+
+.footer-element > * {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.footer-element > i:first-child {
+    top: 40%;
+}
+
+.footer-element > span {
+    top: 70%;
+    font-size: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.more-options {
+    left: 90%;
+    font-size: 10px;
+}
+
+.middle-elements .footer-element.big i:first-child {
+    color: green;
+}
+
+.right-elements .footer-element span {
+    top: 50%;
+    color: red;
+    font-size: 13px;
+}
+
+.right-elements .footer-element:last-child {
+    background-color: rgb(211, 211, 211, 0.3);
 }
